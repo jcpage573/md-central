@@ -1,0 +1,34 @@
+{% extends "index.html" %}
+
+{% block content %}
+
+    <header>
+        <h1>Federer Being Him</h1>
+    </header>
+    <main>
+        <div class="gif-container">
+            <img src="https://i.giphy.com/2shEezvhrpmygiZ4QZ.webp" height="300" width="300" alt="GIF 1">
+        </div>
+
+        <div class="gif-container">
+            <img src="https://i.giphy.com/ne75uUmnbpWeI.webp" height="300" width="300" alt="GIF 2">
+        </div>
+        
+        <div class="gif-container">
+            <img src="https://i.giphy.com/YpkxPYAH5z2JE2iQ9c.webp" height="300" width="300" alt="GIF 2">
+        </div>
+        <div>
+            <h3>Top Players</h3>
+            {% for player in players %}
+            <blockquote>
+                "{{ player['first_name'] }}"
+            </blockquote>
+            {% endfor %}
+        </div>
+    </main>
+    <footer>
+        <p>Created by MD</p>
+    </footer>
+    
+{% endblock %}
+

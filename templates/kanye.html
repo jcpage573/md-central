@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kanye Quotes</title>
+    <link rel="stylesheet" href=/static/styles.css>
+</head>
+<body>
+    <h1>Kanye Quotes</h1>
+    <div>
+        <div>
+            {% for quote in quotes %}
+            <blockquote>
+                "{{ quote }}"
+            </blockquote>
+            {% endfor %}
+        </div>
+    </div>
+</body>
+<img src= "https://imageio.forbes.com/specials-images/imageserve/5ed00f17d4a99d0006d2e738/0x0.jpg?format=jpg&crop=4666,4663,x154,y651,safe&height=416&width=416&fit=bounds">
+<img src="https://media.gettyimages.com/id/1186150141/photo/fast-company-innovation-festival-day-3.jpg?s=2048x2048&w=gi&k=20&c=eFNCRpCrXPyaykVB1qFfMYTWDNqIGwfKSNtw5au5ecs=" width="500" height="416">
+<img src="https://media.gettyimages.com/id/1051894712/photo/washington-dc-rapper-kanye-west-speaks-during-a-meeting-with-u-s-president-donald-trump-in.jpg?s=612x612&w=0&k=20&c=JdYHzJCDDEamS1694fPYpChdSzY-C2gYs1qGAdCvKtg=" width="500" height="416">
+</html>
